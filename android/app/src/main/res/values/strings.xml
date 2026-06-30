@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vivantify</string>
+    <string name="title_activity_main">Vivantify</string>
+    <string name="package_name">com.vivantify.app</string>
+    <string name="custom_url_scheme">com.vivantify.app</string>
+</resources>

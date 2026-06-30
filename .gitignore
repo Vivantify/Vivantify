@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+install_log.txt
+vite_boot.txt
+vite_debug_3.txt
+vite_err.txt
+vite_out.txt
+output.txt
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.cproject
+.settings/
+*.launch
+*.sublime-workspace
+.vscode/
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# System Files
+.DS_Store
+Thumbs.db
+.vite/

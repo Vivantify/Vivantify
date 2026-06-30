@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ED7A1C;
+  --color-primary-dark: #111827;
+  --color-accent-blue: #0ea5e9;
+  --color-text-main: #463939;
+  --color-text-light: #787878;
+  
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Mulish", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body text-text-main bg-white overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-primary text-white font-bold rounded-xl transition-all duration-300 hover:bg-orange-600 hover:shadow-[0_0_20px_rgba(237,122,28,0.4)] hover:-translate-y-1 inline-flex items-center justify-center;
+  }
+  
+  .btn-outline {
+    @apply px-8 py-3 border-2 border-primary text-primary font-bold rounded-xl transition-all duration-300 hover:bg-primary/5 hover:shadow-md hover:-translate-y-1 inline-flex items-center justify-center;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] rounded-3xl;
+  }
+
+  .glass-dark {
+    @apply bg-gray-900/40 backdrop-blur-2xl border border-white/10 shadow-2xl rounded-3xl;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tighter;
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+  }
+}
+
