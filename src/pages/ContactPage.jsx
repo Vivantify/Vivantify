@@ -94,8 +94,8 @@ const ContactPage = () => {
                   { 
                     icon: <MapPin className="w-5 h-5" />, 
                     title: "Registered Office", 
-                    detail: "4-1, Thiruvalluvar Nagar, 3rd Street, Ramanathapuram, Coimbatore South, Tamil Nadu, India – 641045", 
-                    link: "https://maps.google.com/?q=4-1,+Thiruvalluvar+Nagar,+3rd+Street,+Ramanathapuram,+Coimbatore+South,+Tamil+Nadu,+India+641045" 
+                    detail: "25, Subramaniam St, Olymbus, Bharathi Nagar, Ramanathapuram, Coimbatore, Tamil Nadu – 641045", 
+                    link: "https://maps.google.com/?q=25,+Subramaniam+St,+Olymbus,+Bharathi+Nagar,+Ramanathapuram,+Coimbatore,+Tamil+Nadu+641045" 
                   }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
