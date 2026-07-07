@@ -57,7 +57,7 @@ const Hero = () => {
               href="https://www.careers-page.com/vivantify-technology-solutions" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="px-8 py-3.5 border border-transparent text-primary-dark/80 hover:text-primary font-bold rounded-xl transition-all duration-300 hover:bg-gray-100 inline-flex items-center justify-center text-sm uppercase tracking-widest"
+              className="px-6 py-3.5 border border-orange-200/50 bg-orange-50/40 text-primary hover:text-primary font-black rounded-full transition-all duration-300 hover:bg-orange-50/90 hover:border-orange-300/60 inline-flex items-center justify-center text-sm uppercase tracking-widest"
             >
               Careers
               <Briefcase className="ml-2 w-4 h-4" />
