@@ -74,8 +74,8 @@ const Hero = () => {
         >
           <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 group bg-white p-4 backdrop-blur-xl">
             <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" 
-              alt="Technology Team collaborating" 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+              alt="Collaborative tech team working" 
               className="w-full h-auto object-cover rounded-[1.8rem] border border-gray-100 transition-all duration-700 group-hover:scale-[1.02]"
             />
           </div>
