@@ -16,13 +16,13 @@ const FeaturedTechSection = () => {
       icon: <Target className="text-primary" size={24} />, 
       title: "Precision", 
       desc: "Data-informed architecture and implementation decisions using metrics, observability, and real-world usage patterns to continuously refine your platforms.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
     },
     { 
       icon: <ShieldCheck className="text-primary" size={24} />, 
       title: "Security", 
       desc: "Solutions designed with role-based access, least-privilege principles, and industry-standard encryption to help protect your applications and data end-to-end.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
     }
   ];
 

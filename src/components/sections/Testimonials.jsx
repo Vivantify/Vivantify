@@ -8,19 +8,19 @@ const Testimonials = () => {
       text: "Vivantify transformed our legacy infrastructure into a high-performance cloud ecosystem. Their technical depth and commitment to our success were unparalleled.",
       author: "David Chen",
       role: "CTO, Global Logistics Corp",
-      image: "https://i.pravatar.cc/150?u=david"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=150&h=150&q=80"
     },
     {
       text: "The custom software solution they built for us reduced our operational costs by 40% in just six months. They are true partners in innovation.",
       author: "Sarah Jenkins",
       role: "Head of Digital, Artex Group",
-      image: "https://i.pravatar.cc/150?u=sarah"
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=150&h=150&q=80"
     },
     {
       text: "Their team doesn't just write code; they solve business problems. Highly recommended for any enterprise looking to scale intelligently.",
       author: "Michael Rodriguez",
       role: "Founder, FinTech Solutions",
-      image: "https://i.pravatar.cc/150?u=mike"
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=150&h=150&q=80"
     }
   ];
 

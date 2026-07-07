@@ -11,13 +11,13 @@ const AboutPage = () => {
       icon: <Award className="text-primary w-6 h-6" />, 
       title: "Deep Expertise", 
       desc: "Hands-on experience across enterprise applications, cloud infrastructure, data platforms, and automation.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     { 
       icon: <Users className="text-primary w-6 h-6" />, 
       title: "Dedicated Team", 
       desc: "Engineers and consultants who stay engaged from discovery through post-launch support.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+      image: "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     { 
       icon: <Zap className="text-primary w-6 h-6" />, 
@@ -29,7 +29,7 @@ const AboutPage = () => {
       icon: <ShieldCheck className="text-primary w-6 h-6" />, 
       title: "Pragmatic Innovation", 
       desc: "Thoughtful use of modern tools and AI where they add real value, not unnecessary complexity.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     }
   ];
 
