@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Hero from '../components/sections/Hero';
 
 import FeaturedTechSection from '../components/sections/FeaturedTechSection';
-import ProcessSection from '../components/sections/ProcessSection';
 import AboutSection from '../components/sections/AboutSection';
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
       <Hero />
 
       <FeaturedTechSection />
-      <ProcessSection />
       <AboutSection />
     </motion.div>
   );
