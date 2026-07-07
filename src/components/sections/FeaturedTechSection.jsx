@@ -72,7 +72,7 @@ const FeaturedTechSection = () => {
                       {item.icon}
                     </div>
                     <div>
-                      <h4 className="font-black text-white mb-1 tracking-tight text-base">{item.title}</h4>
+                      <h3 className="font-black text-white mb-1 tracking-tight text-base">{item.title}</h3>
                       <p className="text-xs text-gray-300 font-semibold leading-relaxed">{item.desc}</p>
                     </div>
                   </button>

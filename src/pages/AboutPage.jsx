@@ -182,7 +182,7 @@ const AboutPage = () => {
                         {pillar.icon}
                       </div>
                       <div>
-                        <h4 className="text-sm font-black mb-1 text-primary-dark leading-snug transition-colors duration-300">{pillar.title}</h4>
+                        <h3 className="text-sm font-black mb-1 text-primary-dark leading-snug transition-colors duration-300">{pillar.title}</h3>
                         <p className="text-gray-500 text-xxs font-semibold leading-relaxed">{pillar.desc}</p>
                       </div>
                     </button>

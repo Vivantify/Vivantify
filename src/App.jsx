@@ -12,8 +12,8 @@ import CareersPage from './pages/CareersPage';
 
 const seoConfig = {
   '/': {
-    title: 'Vivantify | Custom Enterprise Software & Cloud Solutions in India',
-    description: 'Vivantify Technology Solutions is a Coimbatore-based software development company. We deliver reliable custom software, cloud, and automation services for growing small and mid-size teams in India.',
+    title: 'Vivantify Technology Solutions | Custom Software, Cloud & Automation in India',
+    description: 'Vivantify Technology Solutions is a Coimbatore-based enterprise technology partner for growing small and mid-size teams in India. We deliver reliable custom software, cloud, and automation solutions to modernize legacy systems, streamline operations, and launch new digital products faster.',
     keywords: 'software development company Coimbatore, cloud computing services India, custom software developers Tamil Nadu, DevOps automation consultants, enterprise software partners India'
   },
   '/about': {

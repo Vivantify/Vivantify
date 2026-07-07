@@ -40,11 +40,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Enterprise Services</h4>
             <ul className="space-y-3.5 text-gray-400 font-bold text-sm">
-              <li><Link to="/services" className="hover:text-primary transition-colors">Enterprise Application Dev</Link></li>
-              <li><Link to="/services" className="hover:text-primary transition-colors">Cloud Infrastructure</Link></li>
-              <li><Link to="/services" className="hover:text-primary transition-colors">AI & Machine Learning</Link></li>
-              <li><Link to="/services" className="hover:text-primary transition-colors">Cybersecurity Solutions</Link></li>
-              <li><Link to="/services" className="hover:text-primary transition-colors">DevOps & Automation</Link></li>
+              <li><Link to="/services" className="hover:text-primary transition-colors">Enterprise application development services</Link></li>
+              <li><Link to="/services" className="hover:text-primary transition-colors">Managed cloud infrastructure & migration</Link></li>
+              <li><Link to="/services" className="hover:text-primary transition-colors">AI & machine learning solutions</Link></li>
+              <li><Link to="/services" className="hover:text-primary transition-colors">Cybersecurity consulting & security engineering</Link></li>
+              <li><Link to="/services" className="hover:text-primary transition-colors">DevOps, CI/CD & automation services</Link></li>
             </ul>
           </div>
 

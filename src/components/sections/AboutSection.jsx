@@ -52,7 +52,7 @@ const AboutSection = () => {
             </div>
             
             <div className="p-6 bg-gradient-to-r from-orange-50 to-orange-100/10 rounded-3xl border-l-4 border-primary shadow-sm">
-              <h4 className="font-black text-primary-dark uppercase text-xxs tracking-widest mb-1.5">Our Core Mission</h4>
+              <h3 className="font-black text-primary-dark uppercase text-xxs tracking-widest mb-1.5">Our Core Mission</h3>
               <p className="text-text-main text-sm font-semibold leading-relaxed">
                 Our mission is to help growing small and mid‑size teams adopt scalable, secure software and cloud architectures without the overhead of a large in‑house IT department.
               </p>
@@ -69,7 +69,7 @@ const AboutSection = () => {
                     {v.icon}
                   </div>
                   <div>
-                    <h4 className="text-base font-black text-primary-dark mb-1 transition-colors duration-300">{v.title}</h4>
+                    <h3 className="text-base font-black text-primary-dark mb-1 transition-colors duration-300">{v.title}</h3>
                     <p className="text-text-light text-xs font-semibold leading-relaxed">{v.desc}</p>
                   </div>
                 </motion.div>

@@ -86,11 +86,9 @@ const ProcessSection = ({ bgClass = "bg-gray-50" }) => {
                 <span className="text-4xl font-black text-primary/20 group-hover:text-primary transition-colors duration-300">
                   {s.step}
                 </span>
-                <div>
-                  <h4 className="text-lg font-black text-primary-dark tracking-tight leading-tight group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-lg font-black text-primary-dark tracking-tight leading-tight group-hover:text-primary transition-colors duration-300">
                     {s.title}
-                  </h4>
-                </div>
+                  </h3>
               </div>
 
               {/* Middle: Description */}
