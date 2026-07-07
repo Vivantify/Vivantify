@@ -66,7 +66,7 @@ const ContactPage = () => {
           <div className="flex-1 lg:max-w-xl flex flex-col justify-between">
             <div className="space-y-6">
               <span className="text-sm font-black uppercase tracking-widest text-primary mb-3 block">GET IN TOUCH</span>
-              <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] text-primary-dark">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-black mb-6 tracking-tight leading-[1.1] text-primary-dark">
                 Start Your <br />
                 <span className="gradient-text italic">Next Digital Project</span>
               </h1>

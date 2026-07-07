@@ -86,7 +86,7 @@ const CareersPage = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-none text-primary-dark"
+            className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-black mb-6 tracking-tight leading-[1.1] text-primary-dark"
           >
             Build the <span className="gradient-text italic">Digital Infrastructure</span> of Tomorrow
           </motion.h1>

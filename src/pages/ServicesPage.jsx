@@ -167,7 +167,7 @@ const ServicesPage = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black tracking-tight leading-[1.1]"
+            className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-black tracking-tight leading-[1.1]"
           >
             Software, Cloud & <br />
             <span className="gradient-text italic">Automation Services</span>

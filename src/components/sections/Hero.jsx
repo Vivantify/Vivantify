@@ -29,7 +29,7 @@ const Hero = () => {
             <span className="flex items-center gap-1"><Sparkles size={12} /> Enterprise technology partner for growing small and mid-size teams</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black leading-[1.05] tracking-tight">
             Powering business <br />
             growth with <br />
             <span className="gradient-text">reliable</span> tech delivery
