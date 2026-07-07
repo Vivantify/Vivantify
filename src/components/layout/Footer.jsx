@@ -52,9 +52,9 @@ const Footer = () => {
             <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Contact Info</h4>
             <div className="space-y-4 text-gray-400 text-sm font-semibold">
               <p className="leading-relaxed">
-                25, Subramaniam St, Olymbus,<br />
-                Bharathi Nagar, Ramanathapuram,<br />
-                Coimbatore, Tamil Nadu – 641045
+                25, Subramanian Road,<br />
+                Ramanathapuram,<br />
+                Coimbatore - 641045
               </p>
               <p className="flex flex-col gap-1">
                 <span>Phone: <a href="tel:+919366615960" className="hover:text-primary transition-colors">+91 9366615960</a></span>

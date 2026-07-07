@@ -227,7 +227,7 @@ const ServicesPage = () => {
                   transition={{ duration: 0.3 }}
                   key={service.title}
                   whileHover={{ y: -8 }}
-                  className="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                  className="h-full bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
                     <div className="w-14 h-14 bg-primary-dark text-primary rounded-2xl flex items-center justify-center mb-6 shadow-md border border-white/5">
