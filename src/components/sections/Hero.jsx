@@ -30,8 +30,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight">
-            Powering business growth <br className="hidden lg:block" />
-            with <span className="gradient-text">reliable</span> tech delivery
+            Powering business <br />
+            growth with <br />
+            <span className="gradient-text">reliable</span> tech delivery
           </h1>
           
           <div className="space-y-4">
