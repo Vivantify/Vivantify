@@ -26,17 +26,22 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
             </span>
-            <span className="flex items-center gap-1"><Sparkles size={12} /> Scaling Future-Ready Enterprises</span>
+            <span className="flex items-center gap-1"><Sparkles size={12} /> Enterprise technology partner for growing small and mid-size teams</span>
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black leading-[1.05] tracking-tight">
-            Powering Growth <br />
-            Through <span className="gradient-text italic">Intelligent</span> Tech
+            Powering business growth <br />
+            with <span className="gradient-text">reliable</span> tech delivery
           </h1>
           
-          <p className="text-text-light text-lg sm:text-xl leading-relaxed max-w-2xl font-semibold">
-            At Vivantify, we seamlessly blend innovation with expert engineering to deliver enterprise-grade software, cloud platforms, and automation. We transform complex technical hurdles into scalable milestones that propel your enterprise forward.
-          </p>
+          <div className="space-y-4">
+            <p className="text-text-light text-lg sm:text-xl leading-relaxed max-w-2xl font-semibold">
+              Vivantify builds custom software, cloud, and automation solutions for growing small and mid-size teams that need predictable, high‑quality execution.
+            </p>
+            <p className="text-text-light/80 text-base sm:text-lg leading-relaxed max-w-2xl font-semibold">
+              Our team in Coimbatore and Raleigh helps you modernize legacy systems, streamline operations, and launch new digital products faster—with clear roadmaps and measurable outcomes.
+            </p>
+          </div>
           
           <div className="flex flex-wrap gap-4 pt-4">
             <Link to="/services" className="btn-primary group py-3.5 px-8 text-sm font-black uppercase tracking-widest shadow-xl shadow-primary/20">
@@ -56,19 +61,6 @@ const Hero = () => {
               Careers
               <Briefcase className="ml-2 w-4 h-4" />
             </a>
-          </div>
-          
-          <div className="pt-8 flex items-center gap-6 border-t border-gray-100">
-            <div className="flex -space-x-3.5">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-12 h-12 rounded-full border-[3px] border-white overflow-hidden bg-gray-100 shadow-md">
-                  <img src={`https://i.pravatar.cc/150?u=user_${i}`} alt="user avatar" />
-                </div>
-              ))}
-            </div>
-            <p className="text-sm font-bold text-primary-dark">
-              Trusted by <span className="text-primary font-black">500+</span> Enterprise Tech Leaders
-            </p>
           </div>
         </motion.div>
 

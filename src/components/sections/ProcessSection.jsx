@@ -1,77 +1,113 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Compass, Code2, Zap, Rocket, Sparkles } from 'lucide-react';
+import { Sparkles, Check } from 'lucide-react';
 
-const ProcessSection = () => {
+const ProcessSection = ({ bgClass = "bg-gray-50" }) => {
   const steps = [
     {
       step: "01",
-      icon: <Compass size={28} />,
-      title: "Discovery & Strategy",
-      desc: "We deep-dive into your business goals, target audience, and market landscape to build a bulletproof roadmap."
+      title: "We start with your reality",
+      desc: "Before we suggest tools or architectures, we map your current systems, constraints, and priorities so we only propose changes that make sense for your business and team capacity.",
+      highlights: [
+        "Focus on the problems that slow you down today",
+        "Identify quick wins as well as long-term improvements"
+      ]
     },
     {
       step: "02",
-      icon: <Code2 size={28} />,
-      title: "Architecture & Design",
-      desc: "Our architects draft scalable systems while our designers craft high-fidelity, user-centric interfaces."
+      title: "We design for maintainability",
+      desc: "Our architects and engineers prioritize clear boundaries, clean code, and sensible documentation so your team—or ours—can safely evolve the system over time.",
+      highlights: [
+        "Use proven patterns instead of over-engineering",
+        "Document key decisions and trade-offs in plain language"
+      ]
     },
     {
       step: "03",
-      icon: <Zap size={28} />,
-      title: "Agile Development",
-      desc: "Regular sprints and feedback loops keep the project on track with continuous integration and deployment."
+      title: "We deliver in small, visible steps",
+      desc: "Work is organized into small, trackable increments with regular demos, so you see progress often and can adjust priorities before anything goes off-track.",
+      highlights: [
+        "Frequent check-ins and progress updates",
+        "Early feedback from real users where possible"
+      ]
     },
     {
       step: "04",
-      icon: <Rocket size={28} />,
-      title: "Testing & Launch",
-      desc: "Rigorous quality assurance ensures a flawless rollout, followed by ongoing optimization and support."
+      title: "We launch carefully and support after go-live",
+      desc: "We plan rollouts, monitoring, and handover together with you so launch day is controlled, not chaotic, and your team knows what to expect next.",
+      highlights: [
+        "Clear runbooks for deployment and incident response",
+        "Post-launch support and iterative improvements based on real usage"
+      ]
+    },
+    {
+      step: "05",
+      title: "We look for compounding wins",
+      desc: "After initial delivery, we help you spot patterns—repeated manual work, recurring errors, or frequently requested features—that can become the next wave of automation or product enhancements.",
+      highlights: [
+        "Turn one-off projects into reusable components",
+        "Build a roadmap that compounds value over time"
+      ]
     }
   ];
 
   return (
-    <section className="py-28 bg-gray-50 relative overflow-hidden">
+    <section className={`py-16 ${bgClass} relative overflow-hidden`}>
       <div className="absolute top-0 right-0 w-[35%] h-[35%] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
           <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary">
-            <Sparkles size={12} /> Execution Workflow
+            <Sparkles size={12} /> HOW WE WORK
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-primary-dark tracking-tight leading-tight">
-            How We <span className="gradient-text italic">Deliver</span> Excellence
+            Our Delivery Approach
           </h2>
           <p className="text-lg text-text-light font-semibold">
-            Our refined development methodology ensures transparency, speed, and uncompromising quality at every stage of the project lifecycle.
+            We make it easy for busy teams to move from problem to deployed solution with a delivery approach that is transparent, predictable, and built for the long term.
           </p>
         </div>
 
-        {/* Process Steps Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+        {/* Process Steps List */}
+        <div className="space-y-4 max-w-5xl mx-auto relative z-10">
           {steps.map((s, i) => (
             <motion.div 
               key={i}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.15, duration: 0.6 }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="relative p-8 rounded-[2.5rem] bg-white border border-gray-100/80 hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between"
+              className="group flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-white border border-gray-100/80 hover:border-primary/20 hover:shadow-2xl transition-all duration-300"
             >
-              <div>
-                <div className="flex justify-between items-center mb-8">
-                  <div className="w-14 h-14 bg-orange-50 text-primary border border-orange-100 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-500 shadow-sm">
-                    {s.icon}
-                  </div>
-                  <span className="text-4xl font-black text-gray-200 group-hover:text-primary/20 transition-colors duration-500">
-                    {s.step}
-                  </span>
+              {/* Left Side: Number & Title */}
+              <div className="flex items-start gap-4 md:w-1/3 shrink-0">
+                <span className="text-4xl font-black text-primary/20 group-hover:text-primary transition-colors duration-300">
+                  {s.step}
+                </span>
+                <div>
+                  <h4 className="text-lg font-black text-primary-dark tracking-tight leading-tight group-hover:text-primary transition-colors duration-300">
+                    {s.title}
+                  </h4>
                 </div>
-                <h4 className="text-xl font-black mb-3 text-primary-dark tracking-tight leading-snug">{s.title}</h4>
-                <p className="text-text-light text-sm font-semibold leading-relaxed">{s.desc}</p>
+              </div>
+
+              {/* Middle: Description */}
+              <div className="flex-grow md:w-2/5">
+                <p className="text-text-light text-sm font-semibold leading-relaxed">
+                  {s.desc}
+                </p>
+              </div>
+
+              {/* Right Side: Bullet highlights */}
+              <div className="md:w-1/3 bg-gray-50/50 group-hover:bg-orange-50/10 border border-gray-100/50 rounded-xl p-4 space-y-3 shrink-0 transition-colors duration-300">
+                {s.highlights.map((highlight, idx) => (
+                  <div key={idx} className="flex items-start gap-2.5 text-xs font-semibold text-text-main leading-relaxed">
+                    <Check size={14} className="text-primary mt-0.5 shrink-0" />
+                    <span>{highlight}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
           ))}

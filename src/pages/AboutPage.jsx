@@ -1,170 +1,205 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Target, Users, Zap, ShieldCheck, Award, Heart, Handshake, Sparkles } from 'lucide-react';
+import ProcessSection from '../components/sections/ProcessSection';
 
 const AboutPage = () => {
-  const stats = [
-    { label: "Years Experience", value: "8+" },
-    { label: "Projects Completed", value: "340+" },
-    { label: "Client Satisfaction", value: "99%" },
-    { label: "Expert Engineers", value: "80+" }
-  ];
+  const [activeTab, setActiveTab] = useState(0);
 
   const pillars = [
     { 
       icon: <Award className="text-primary w-6 h-6" />, 
       title: "Deep Expertise", 
-      desc: "Deep technical knowledge across multiple domains and technologies." 
+      desc: "Hands-on experience across enterprise applications, cloud infrastructure, data platforms, and automation.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     { 
       icon: <Users className="text-primary w-6 h-6" />, 
       title: "Dedicated Team", 
-      desc: "Skilled professionals committed to delivering exceptional results." 
+      desc: "Engineers and consultants who stay engaged from discovery through post-launch support.",
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     { 
       icon: <Zap className="text-primary w-6 h-6" />, 
       title: "Results-Driven", 
-      desc: "Focus on measurable outcomes that drive business growth." 
+      desc: "Focus on outcomes like reduced manual work, improved reliability, and faster delivery cycles.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     },
     { 
       icon: <ShieldCheck className="text-primary w-6 h-6" />, 
-      title: "Innovation-First", 
-      desc: "Cutting-edge solutions using the latest technologies and methodologies." 
+      title: "Pragmatic Innovation", 
+      desc: "Thoughtful use of modern tools and AI where they add real value, not unnecessary complexity.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
     }
   ];
 
-  const coreValues = [
-    {
-      icon: <Award className="text-white w-6 h-6" />,
-      title: "Excellence",
-      desc: "We hold ourselves to the highest standards, delivering solutions designed with precision, quality, and future-proof architecture that scales with your growth."
-    },
-    {
-      icon: <Heart className="text-white w-6 h-6" />,
-      title: "Innovation",
-      desc: "Constant learning and experimentation fuel our drive to create cutting-edge technologies that solve complex business challenges."
-    },
-    {
-      icon: <Handshake className="text-white w-6 h-6" />,
-      title: "Partnership",
-      desc: "We believe in forging transparent, collaborative relationships with our clients, fostering trust and shared success throughout every project phase."
-    }
-  ];
+
 
   return (
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-36 pb-24 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden"
+      className="pt-28 overflow-hidden bg-white"
     >
-      <div className="container mx-auto px-6">
-        
-        {/* Page Hero Header */}
-        <div className="max-w-4xl mx-auto text-center mb-24 space-y-4">
-          <motion.div 
-            initial={{ y: 15, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary"
-          >
-            <Sparkles size={12} /> About Vivantify
-          </motion.div>
-          <motion.h1 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-none text-primary-dark"
-          >
-            Powering Progress Through <span className="gradient-text italic">Intelligent Tech</span>
-          </motion.h1>
-          <motion.p 
-            initial={{ y: 25, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-text-light leading-relaxed font-semibold max-w-3xl mx-auto"
-          >
-            Vivantify Technology Solutions was founded on the belief that technology is the key driver of progress. We bridge engineering excellence with robust architectural planning to design next-gen enterprise systems.
-          </motion.p>
-        </div>
+      {/* 1. Hero Section */}
+      <section className="pt-20 pb-24 bg-gradient-to-b from-gray-50/60 via-white to-white border-b border-gray-100/50 relative overflow-hidden">
+        {/* Decorative Grid and Glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(#ea580c05_1.5px,transparent_1.5px)] [background-size:32px_32px] pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[80%] bg-primary/5 rounded-full blur-[140px] pointer-events-none"></div>
+        <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl animate-pulse-slow"></div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-28">
-          {stats.map((stat, i) => (
+        {/* Animated decorative shapes */}
+        <motion.div 
+          animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute left-[8%] top-[25%] hidden lg:block w-16 h-16 bg-gradient-to-br from-primary to-orange-400 rounded-2xl opacity-20 blur-[1px] shadow-lg"
+        />
+        <motion.div 
+          animate={{ y: [0, 20, 0], rotate: [0, -10, 0] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute right-[8%] top-[15%] hidden lg:block w-24 h-24 bg-gradient-to-tr from-accent-blue to-purple-400 rounded-full opacity-10 blur-[2px] shadow-lg"
+        />
+        <motion.div 
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute left-[12%] bottom-[15%] hidden lg:block px-4 py-2 bg-white/40 border border-white/60 backdrop-blur-sm rounded-full shadow-sm text-xxs font-black text-gray-500 uppercase tracking-widest"
+        >
+          COIMBATORE, IN
+        </motion.div>
+        <motion.div 
+          animate={{ y: [0, 15, 0] }}
+          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute right-[15%] bottom-[20%] hidden lg:block p-4 bg-white/50 border border-white/70 backdrop-blur-md rounded-2xl shadow-sm text-xxs font-black text-primary uppercase tracking-widest"
+        >
+          Scalable Delivery
+        </motion.div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Page Hero Header */}
+          <div className="max-w-4xl mx-auto text-center space-y-4">
             <motion.div 
-              key={i} 
-              whileHover={{ y: -8 }}
-              className="bg-white p-8 text-center border-b-4 border-b-primary rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-350 border border-gray-100/80"
+              initial={{ y: 15, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary"
             >
-              <p className="text-4xl md:text-5xl font-black text-primary-dark mb-2 tracking-tight">{stat.value}</p>
-              <p className="text-xxs font-black uppercase tracking-widest text-gray-400">{stat.label}</p>
+              <Sparkles size={12} /> ABOUT VIVANTIFY
             </motion.div>
-          ))}
-        </div>
+            <motion.h1 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1] text-primary-dark"
+            >
+              Building Reliable <br />
+              <span className="gradient-text">Enterprise-Grade Software</span>
+            </motion.h1>
 
-        {/* Mission & Core Pillar Split Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-28">
-          <div className="relative">
-            <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full animate-pulse-slow"></div>
-            <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-2xl bg-white">
-              <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="Intelligent World connection diagram" 
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4 text-primary-dark tracking-tight leading-tight">Our <span className="text-primary italic">Expertise</span> & Drive</h2>
-              <p className="text-base md:text-lg text-text-light leading-relaxed font-semibold">
-                To empower businesses across industries by delivering advanced IT solutions that address today’s demands while anticipating tomorrow’s ambitions. We help you stay resilient in a fast-paced environment.
+            <motion.div 
+              initial={{ scaleX: 0, opacity: 0 }}
+              animate={{ scaleX: 1, opacity: 1 }}
+              transition={{ delay: 0.15, duration: 0.6 }}
+              className="w-20 h-1 bg-gradient-to-r from-primary to-orange-400 mx-auto my-8 rounded-full origin-center"
+            ></motion.div>
+
+            <motion.div 
+              initial={{ y: 25, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-lg md:text-xl text-text-light leading-relaxed font-semibold max-w-3xl mx-auto space-y-4"
+            >
+              <p>
+                Vivantify Technology Solutions was founded on the belief that thoughtfully applied technology is a powerful driver of business progress.
               </p>
+              <p className="text-base md:text-lg text-text-light/90 font-medium max-w-2xl mx-auto">
+                We bridge engineering expertise and practical delivery to design and build systems that actually work for the people who use and maintain them.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Who We Are & What We Do Section */}
+      <section className="py-16 bg-gray-50/50 border-b border-gray-100/50 relative">
+        <div className="absolute top-1/2 left-[-10%] w-[30%] h-[30%] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="container mx-auto px-6">
+          {/* Mission & Core Pillar Split Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7 relative w-full">
+              <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full animate-pulse-slow"></div>
+              <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-2xl bg-white">
+                <motion.img 
+                  key={activeTab}
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4 }}
+                  src={pillars[activeTab].image} 
+                  alt={pillars[activeTab].title} 
+                  className="w-full h-[460px] object-cover"
+                />
+              </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {pillars.map((pillar, i) => (
-                <div key={i} className="flex gap-4 p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                  <div className="mt-1 bg-orange-50 p-2.5 rounded-xl border border-orange-100 h-fit shrink-0">
-                    {pillar.icon}
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-black mb-1 text-primary-dark leading-snug">{pillar.title}</h4>
-                    <p className="text-gray-500 text-xxs font-semibold leading-relaxed">{pillar.desc}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="lg:col-span-5 space-y-5">
+              <div className="space-y-2">
+                <span className="text-xxs font-black uppercase tracking-widest text-primary block">OUR EXPERTISE</span>
+                <h2 className="text-2xl md:text-3xl font-black text-primary-dark tracking-tight leading-tight">
+                  Who <span className="text-primary italic">We Are</span>
+                </h2>
+                <p className="text-sm text-text-light leading-relaxed font-semibold">
+                  We are a Coimbatore‑based technology team focused on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long‑term architecture decisions with real‑world delivery constraints.
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-primary-dark tracking-tight">
+                  What <span className="text-primary italic">We Do</span>
+                </h3>
+                <p className="text-xs text-text-light/90 leading-relaxed font-semibold">
+                  We help growing small and mid‑size teams modernize legacy systems, move to the cloud, and automate critical workflows so they can operate more efficiently and respond faster to change.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 gap-3">
+                {pillars.map((pillar, i) => {
+                  const isActive = activeTab === i;
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => setActiveTab(i)}
+                      className={`w-full text-left group flex gap-3 p-3.5 rounded-xl border transition-all duration-300 cursor-pointer ${
+                        isActive 
+                          ? "bg-orange-50/20 border-primary shadow-lg shadow-primary/5" 
+                          : "bg-white border-gray-100 shadow-sm hover:shadow-md hover:border-primary hover:bg-orange-50/10"
+                      }`}
+                    >
+                      <div className={`mt-0.5 p-2 rounded-lg border h-fit shrink-0 transition-colors duration-300 ${
+                        isActive 
+                          ? "bg-primary/20 border-primary/30 text-white" 
+                          : "bg-orange-50 border-orange-100 text-primary group-hover:border-primary/30"
+                      }`}>
+                        {pillar.icon}
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-black mb-1 text-primary-dark leading-snug transition-colors duration-300">{pillar.title}</h4>
+                        <p className="text-gray-500 text-xxs font-semibold leading-relaxed">{pillar.desc}</p>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Core Values Section */}
-        <div className="py-20 bg-gray-50/50 rounded-[3.5rem] px-8 md:px-16 mb-10 border border-gray-100/50">
-          <div className="text-center mb-16 max-w-2xl mx-auto space-y-3">
-            <span className="text-xxs font-black uppercase tracking-widest text-primary block">How We Work</span>
-            <h2 className="text-3xl md:text-4xl font-black text-primary-dark tracking-tight">Our Core <span className="text-primary italic">Values</span></h2>
-            <p className="text-text-light font-semibold text-sm">
-              We hold ourselves to strict architectural and behavioral principles to ensure customer success.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {coreValues.map((value, i) => (
-              <motion.div 
-                key={i} 
-                whileHover={{ y: -8 }}
-                className="bg-white p-8 rounded-3xl border border-gray-100 shadow-md relative overflow-hidden group"
-              >
-                <div className="absolute top-0 left-0 w-full h-1.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-primary/20">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-black mb-3 text-primary-dark tracking-tight">{value.title}</h3>
-                <p className="text-text-light text-xs font-semibold leading-relaxed">{value.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* 3. How We Work Process Section */}
+      <ProcessSection bgClass="bg-white border-b border-gray-100/50" />
+
+
+
+
     </motion.div>
   );
 };

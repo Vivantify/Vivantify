@@ -8,7 +8,7 @@ const ContactPage = () => {
     email: '',
     phone: '',
     companyName: '',
-    serviceOfInterest: 'Application Development & Maintenance',
+    serviceOfInterest: 'Software & Web',
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -22,33 +22,29 @@ const ContactPage = () => {
   };
 
   const services = [
-    "Application Development & Maintenance",
-    "Web Development",
-    "Cloud Computing Services",
-    "AI & Machine Learning Solutions",
-    "Big Data & Analytics",
-    "Cybersecurity & Risk Management",
-    "Devops & Automation Services",
-    "Digital Transformation Solutions",
-    "IT Consulting & Strategy"
+    "Software & Web",
+    "Cloud & DevOps",
+    "AI & Data",
+    "Consulting & Strategy",
+    "Other"
   ];
 
   const faqs = [
     { 
       q: "What is your typical project timeline?", 
-      a: "Timelines vary based on scope. Our discovery phase typically takes 1 to 2 weeks, with prototype/MVP deliveries ranging from 6 to 12 weeks of agile sprints." 
+      a: "Timelines vary by scope, but most projects start with a 2–4 week discovery phase followed by iterative delivery in 2‑week sprints." 
     },
     { 
       q: "Do you offer post-launch support?", 
-      a: "Yes. We offer continuous DevOps, maintenance, security audits, and bug fixes to ensure complete operational stability long-term." 
+      a: "Yes. We provide ongoing maintenance, enhancements, and monitoring, or can work alongside your in‑house team in a shared model." 
     },
     { 
       q: "Can you collaborate with our in-house engineering team?", 
-      a: "Absolutely. We seamlessly integrate with existing in-house squads, providing technical leadership, specialized resources, or pure execution velocity." 
+      a: "Absolutely. We often plug into existing teams to handle specific streams such as cloud, DevOps, or feature development, following your processes where it makes sense." 
     },
     { 
       q: "How does the free consultation work?", 
-      a: "Simply fill out our message form above or email us. We'll schedule a virtual tech review to analyze your processes, identify bottlenecks, and map out a growth blueprint." 
+      a: "We schedule a 30–45 minute call to understand your goals and constraints, walk through possible approaches, and outline suggested next steps and ballpark effort." 
     }
   ];
 
@@ -69,12 +65,13 @@ const ContactPage = () => {
           {/* Left Panel: Contact Info */}
           <div className="flex-1 lg:max-w-xl flex flex-col justify-between">
             <div className="space-y-6">
-              <span className="text-sm font-black uppercase tracking-widest text-primary mb-3 block">Get In Touch</span>
+              <span className="text-sm font-black uppercase tracking-widest text-primary mb-3 block">GET IN TOUCH</span>
               <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] text-primary-dark">
-                Start Your <span className="gradient-text italic">Digital Transformation</span>
+                Start Your <br />
+                <span className="gradient-text italic">Next Digital Project</span>
               </h1>
               <p className="text-lg text-text-light font-semibold leading-relaxed">
-                Ready to accelerate your business growth? Schedule a consultation with our technology experts to discuss your project requirements and strategic objectives.
+                Share your challenges with our team and we’ll explore practical options for your software, cloud, or automation needs—no obligation.
               </p>
 
               <div className="space-y-6 pt-6">
@@ -123,9 +120,9 @@ const ContactPage = () => {
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 rounded-full text-primary font-bold text-xxs uppercase tracking-wider mb-3">
                   Consultation
                 </span>
-                <h4 className="text-lg font-black mb-2">Free Consultation Available</h4>
+                <h4 className="text-lg font-black mb-2">Free consultation available</h4>
                 <p className="text-gray-400 group-hover:text-white/80 transition-colors text-xs font-semibold leading-relaxed">
-                  We look forward to analyzing your challenges and crafting scalable growth architectures.
+                  We’ll review your current situation, discuss options, and suggest next steps you can take—whether or not you decide to work with us.
                 </p>
               </div>
             </div>
@@ -145,14 +142,15 @@ const ContactPage = () => {
                     className="space-y-6"
                   >
                     <div>
-                      <h3 className="text-2xl font-black text-primary-dark mb-1.5 tracking-tight">Send us a Message</h3>
-                      <p className="text-xs text-text-light font-semibold">Fill out the fields below and we'll reply within 24 hours.</p>
+                      <p className="text-base text-primary-dark font-black tracking-tight leading-snug">
+                        Tell us a bit about your project and we’ll get back to you within one business day with next steps.
+                      </p>
                     </div>
                     
                     <form className="space-y-5" onSubmit={handleSubmit}>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="space-y-2">
-                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Full Name</label>
+                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Full name</label>
                           <input 
                             type="text" 
                             required
@@ -163,7 +161,7 @@ const ContactPage = () => {
                           />
                         </div>
                         <div className="space-y-2">
-                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Email Address</label>
+                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Work email</label>
                           <input 
                             type="email" 
                             required
@@ -177,7 +175,7 @@ const ContactPage = () => {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="space-y-2">
-                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Phone Number</label>
+                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Phone number</label>
                           <input 
                             type="tel" 
                             required
@@ -188,7 +186,7 @@ const ContactPage = () => {
                           />
                         </div>
                         <div className="space-y-2">
-                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Company Name</label>
+                          <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Company name</label>
                           <input 
                             type="text" 
                             required
@@ -201,7 +199,7 @@ const ContactPage = () => {
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">Service of Interest</label>
+                        <label className="text-xxs font-black uppercase text-gray-400 tracking-wider">What do you need help with?</label>
                         <select 
                           className="w-full bg-gray-50 border border-gray-100 rounded-xl p-3.5 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-sm font-semibold text-primary-dark appearance-none"
                           value={formData.serviceOfInterest}
@@ -218,14 +216,14 @@ const ContactPage = () => {
                         <textarea 
                           required
                           className="w-full bg-gray-50 border border-gray-100 rounded-xl p-3.5 focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all min-h-[120px] text-sm font-semibold text-primary-dark" 
-                          placeholder="Tell us about your project requirements..."
+                          placeholder="Tell us about your project, current stack, and any timelines we should know about…"
                           value={formData.message}
                           onChange={(e) => setFormData({...formData, message: e.target.value})}
                         ></textarea>
                       </div>
 
                       <button className="w-full btn-primary py-4 text-sm font-black group">
-                        Send Your Message 
+                        Submit enquiry 
                         <Send size={14} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </button>
                     </form>
@@ -258,11 +256,13 @@ const ContactPage = () => {
 
         </div>
 
+
+
         {/* FAQ Section with Accordion */}
         <div className="mt-32 max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-sm font-black uppercase tracking-widest text-primary mb-3 block">Got Questions?</span>
-            <h2 className="text-4xl font-black text-primary-dark tracking-tight">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-black text-primary-dark tracking-tight">Frequently asked questions</h2>
             <p className="text-text-light font-semibold mt-1">Quick answers to common inquiries about our engagement models.</p>
           </div>
           <div className="space-y-4">

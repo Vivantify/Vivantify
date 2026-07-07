@@ -7,22 +7,22 @@ const AboutSection = () => {
     {
       icon: <Target className="text-primary" size={24} />,
       title: "Deep Expertise",
-      desc: "Deep technical knowledge across multiple domains and technologies."
+      desc: "Hands-on experience across enterprise applications, cloud infrastructure, data platforms, and automation."
     },
     {
       icon: <Users className="text-primary" size={24} />,
       title: "Dedicated Team",
-      desc: "Skilled professionals committed to delivering exceptional results."
+      desc: "Engineers and consultants who stay engaged from discovery through post-launch support."
     },
     {
       icon: <Zap className="text-primary" size={24} />,
       title: "Results-Driven",
-      desc: "Focus on measurable outcomes that drive business growth."
+      desc: "Focus on outcomes such as reduced manual work, improved reliability, and faster delivery cycles."
     },
     {
       icon: <ShieldCheck className="text-primary" size={24} />,
-      title: "Innovation-First",
-      desc: "Cutting-edge solutions using the latest technologies and methodologies."
+      title: "Pragmatic Innovation",
+      desc: "Thoughtful use of modern tools and AI where they add real value, not unnecessary complexity."
     }
   ];
 
@@ -36,19 +36,25 @@ const AboutSection = () => {
           {/* Text Left */}
           <div className="flex-grow lg:w-1/2 space-y-6">
             <div className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-primary">
-              <Sparkles size={12} /> About Vivantify
+              <Sparkles size={12} /> ABOUT VIVANTIFY
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-primary-dark tracking-tight leading-[1.1]">
-              Crafting Scalable <span className="gradient-text italic">Digital Solutions</span>
+              Crafting Scalable <br />
+              <span className="gradient-text">Digital Solutions</span>
             </h2>
-            <p className="text-lg text-text-light leading-relaxed font-semibold">
-              Vivantify Technology Solutions was founded on the belief that technology is the key driver of meaningful progress. With years of industry experience and a dedicated team of experts, we craft digital solutions that are secure, scalable, and tailored to your business’s unique challenges.
-            </p>
+            <div className="space-y-4 text-lg text-text-light leading-relaxed font-semibold">
+              <p>
+                Vivantify Technology Solutions India Pvt Ltd is a Coimbatore‑based technology company that helps growing small and mid-size teams build secure, scalable digital solutions across software, cloud, and automation.
+              </p>
+              <p className="text-base text-text-light/90 font-medium">
+                Founded by engineers with experience in enterprise IT and product development, we focus on practical architectures, reliable execution, and long‑term maintainability.
+              </p>
+            </div>
             
             <div className="p-6 bg-gradient-to-r from-orange-50 to-orange-100/10 rounded-3xl border-l-4 border-primary shadow-sm">
               <h4 className="font-black text-primary-dark uppercase text-xxs tracking-widest mb-1.5">Our Core Mission</h4>
               <p className="text-text-main text-sm font-semibold leading-relaxed">
-                To empower businesses across industries by delivering advanced IT solutions that address today’s demands while anticipating tomorrow’s ambitions, ensuring sustained success.
+                Our mission is to help growing small and mid‑size teams adopt scalable, secure software and cloud architectures without the overhead of a large in‑house IT department.
               </p>
             </div>
             
@@ -57,13 +63,13 @@ const AboutSection = () => {
                 <motion.div 
                   key={i}
                   whileHover={{ y: -4, x: 2 }}
-                  className="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-all duration-300"
+                  className="group flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary hover:bg-orange-50/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 cursor-pointer"
                 >
-                  <div className="mt-0.5 bg-white p-3 rounded-xl h-fit shadow-sm border border-gray-100/80 text-primary shrink-0">
+                  <div className="mt-0.5 bg-white p-3 rounded-xl h-fit shadow-sm border border-gray-100/80 text-primary shrink-0 transition-colors duration-300 group-hover:border-primary/30">
                     {v.icon}
                   </div>
                   <div>
-                    <h4 className="text-base font-black text-primary-dark mb-1">{v.title}</h4>
+                    <h4 className="text-base font-black text-primary-dark mb-1 transition-colors duration-300">{v.title}</h4>
                     <p className="text-text-light text-xs font-semibold leading-relaxed">{v.desc}</p>
                   </div>
                 </motion.div>
@@ -81,16 +87,7 @@ const AboutSection = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            
-            {/* Overlay statistics card */}
-            <motion.div 
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute -bottom-8 -right-4 md:-right-8 bg-primary text-white p-6.5 rounded-3xl shadow-2xl text-center min-w-[200px] z-20 border border-primary/20"
-            >
-              <p className="text-5xl font-black mb-1 leading-none tracking-tight">8+</p>
-              <p className="text-xxs font-black uppercase tracking-widest opacity-80">Years of Excellence</p>
-            </motion.div>
+
           </div>
 
         </div>

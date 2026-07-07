@@ -16,7 +16,7 @@ const Footer = () => {
               <img src="/logo.png" alt="Vivantify" className="h-8 w-auto object-contain" />
             </Link>
             <p className="text-gray-400 leading-relaxed text-sm font-semibold">
-              Vivantify delivers cutting-edge software, cloud, and automation solutions designed to help growing businesses scale smarter and innovate faster.
+              Vivantify delivers software, cloud, and automation solutions that help growing small and mid-size teams streamline operations and launch new digital capabilities faster.
             </p>
             <div className="flex gap-4">
               {[Linkedin, Twitter, Instagram, Globe].map((Icon, i) => (

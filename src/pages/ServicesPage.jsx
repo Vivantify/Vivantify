@@ -20,7 +20,7 @@ const ServicesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = [
-    { name: 'All', label: 'All Services' },
+    { name: 'All', label: 'All services' },
     { name: 'Software', label: 'Software & Web' },
     { name: 'Cloud', label: 'Cloud & DevOps' },
     { name: 'Data', label: 'AI, Data & Strategy' }
@@ -31,100 +31,109 @@ const ServicesPage = () => {
       category: 'Software',
       icon: <Code2 size={32} />,
       title: "Application Development & Maintenance",
-      desc: "Custom-built, secure applications tailored to your unique business needs, ensuring long-term reliability and agility.",
+      desc: "Custom business applications designed for your specific workflows, with a focus on security, maintainability, and long‑term support.",
       features: [
-        "Custom-built, secure applications tailored to your unique business needs.",
-        "Scalable architecture ensuring high performance and reliability.",
-        "Ongoing support, updates, and bug fixes for long-term stability."
-      ]
+        "Custom applications built around your real business processes.",
+        "Scalable architecture for stable performance as usage grows.",
+        "Ongoing support, updates, and fixes to keep systems healthy over time."
+      ],
+      cta: "Discuss application requirements"
     },
     {
       category: 'Software',
       icon: <Globe size={32} />,
       title: "Web Development",
-      desc: "Responsive, high-performance websites leveraging cutting-edge web frameworks for seamless engagement.",
+      desc: "Modern, responsive websites built with current web frameworks, designed to load fast and clearly explain what your business offers.",
       features: [
-        "Responsive, user-friendly websites using modern frameworks like React and Angular.",
-        "SEO-optimized and fast-loading designs to boost visibility.",
-        "Seamless integration with backend services and third-party APIs."
-      ]
+        "User‑friendly, responsive websites using modern frameworks.",
+        "Fast, SEO‑conscious builds to improve visibility and experience.",
+        "Clean integrations with your backend systems and services."
+      ],
+      cta: "Discuss web project"
     },
     {
       category: 'Cloud',
       icon: <Cloud size={32} />,
       title: "Cloud Computing Services",
-      desc: "Scale with confidence using enterprise-ready multi-cloud setups and optimized cloud infrastructures.",
+      desc: "Cloud migration and infrastructure services that help you run reliably on AWS, Azure, or Google Cloud without unnecessary complexity.",
       features: [
-        "Expert cloud migration and infrastructure management on AWS, Azure, and Google Cloud.",
-        "Scalable, cost-effective cloud solutions with disaster recovery and backup.",
-        "Secure cloud-native architecture optimized for performance and compliance."
-      ]
+        "Plan and execute migrations to AWS, Azure, or Google Cloud.",
+        "Design cost‑aware, scalable infrastructure with backup and recovery.",
+        "Implement cloud‑native architectures with security and compliance in mind."
+      ],
+      cta: "Discuss cloud needs"
     },
     {
       category: 'Data',
       icon: <Brain size={32} />,
       title: "AI & Machine Learning Solutions",
-      desc: "Harness cognitive intelligence and data models to drive automation and next-gen analytics.",
+      desc: "Use practical AI and machine learning to automate routine tasks, improve decisions, and personalize user experiences.",
       features: [
-        "Intelligent automation and predictive analytics to drive smarter business decisions.",
-        "Development of AI-powered chatbots, recommendation engines, and data models.",
-        "Real-time insights that enhance personalization and operational efficiency."
-      ]
+        "Automation and predictive models to support daily decision‑making.",
+        "AI‑powered chatbots, recommenders, or classifiers tailored to your use cases.",
+        "Dashboards and alerts that turn model output into actions your team can use."
+      ],
+      cta: "Discuss AI initiatives"
     },
     {
       category: 'Data',
       icon: <Database size={32} />,
       title: "Big Data & Analytics",
-      desc: "Streamline raw pipelines into high-fidelity data lakes for real-time visualization and business intelligence.",
+      desc: "Collect, organize, and visualize your data so teams can see what’s happening and act on it faster.",
       features: [
-        "Creation of data lakes and pipelines for seamless data collection and processing.",
-        "Interactive dashboards and visualization tools for actionable insights.",
-        "Advanced analytics to identify trends, patterns, and customer behaviors."
-      ]
+        "Set up pipelines and storage to centralize data from key systems.",
+        "Build dashboards and reports that answer your important questions.",
+        "Apply analytics to spot trends, risks, and opportunities."
+      ],
+      cta: "Discuss analytics needs"
     },
     {
       category: 'Cloud',
       icon: <ShieldCheck size={32} />,
       title: "Cybersecurity & Risk Management",
-      desc: "Fortify your data assets and cloud workspaces with enterprise zero-trust security layers.",
+      desc: "Improve the security of your applications and cloud environments with practical controls, reviews, and monitoring.",
       features: [
-        "Comprehensive threat detection, firewall management, and data encryption.",
-        "Regular security audits and vulnerability assessments to minimize risk.",
-        "Implementation of identity and access management protocols like MFA and SSO."
-      ]
+        "Threat detection, firewall configuration, and data encryption.",
+        "Regular security reviews and vulnerability checks to reduce risk.",
+        "Identity and access management including MFA and SSO where appropriate."
+      ],
+      cta: "Discuss security posture"
     },
     {
       category: 'Cloud',
       icon: <InfinityIcon size={32} />,
-      title: "Devops & Automation Services",
-      desc: "Unleash continuous integration speed while safeguarding environment stability.",
+      title: "DevOps & Automation Services",
+      desc: "Streamline how you build, test, and deploy software using DevOps practices and automation.",
       features: [
-        "Automated CI/CD pipelines for faster, error-free software delivery.",
-        "Infrastructure as Code (IaC) for consistent and scalable environment management.",
-        "Continuous monitoring and automated testing to ensure system reliability."
-      ]
+        "CI/CD pipelines for more frequent, predictable releases.",
+        "Infrastructure as Code to keep environments consistent.",
+        "Monitoring and automated tests to catch issues early."
+      ],
+      cta: "Discuss DevOps setup"
     },
     {
       category: 'Software',
       icon: <RefreshCw size={32} />,
       title: "Digital Transformation Solutions",
-      desc: "Modernize legacy cores with intelligent integrations and robust automated workflows.",
+      desc: "Modernize legacy systems step by step, connecting them to modern tools and automating key processes.",
       features: [
-        "Modernizing legacy systems with automation and cloud integration.",
-        "Enhancing customer experience through digital process reengineering.",
-        "Streamlining operations for increased agility and reduced costs."
-      ]
+        "Incrementally modernize legacy applications with cloud and API integrations.",
+        "Redesign key journeys to improve customer and internal user experience.",
+        "Simplify operations to reduce manual work and operational cost."
+      ],
+      cta: "Discuss transformation roadmap"
     },
     {
       category: 'Data',
       icon: <Compass size={32} />,
       title: "IT Consulting & Strategy",
-      desc: "Align software architectures and system models with actual scalability goals.",
+      desc: "Get independent advice on architecture, tooling, and roadmaps so your technology investments match your business goals.",
       features: [
-        "Strategic IT planning aligned with your business goals and growth vision.",
-        "Technology assessments and vendor selection to optimize investments.",
-        "Roadmap development for sustainable digital transformation."
-      ]
+        "Strategic IT planning aligned with your growth and risk profile.",
+        "Architecture and technology assessments to inform decisions.",
+        "Roadmap creation to guide the next phases of your digital initiatives."
+      ],
+      cta: "Discuss consulting needs"
     }
   ];
 
@@ -152,23 +161,32 @@ const ServicesPage = () => {
             animate={{ scale: 1, opacity: 1 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-primary font-bold text-xs uppercase tracking-widest"
           >
-            <Sparkles size={14} /> Our Comprehensive Offerings
+            <Sparkles size={14} /> OUR SERVICES
           </motion.div>
           <motion.h1 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black tracking-tight leading-none"
+            className="text-5xl md:text-7xl font-black tracking-tight leading-[1.1]"
           >
-            Transformative <span className="gradient-text italic">Technology Services</span>
+            Software, Cloud & <br />
+            <span className="gradient-text italic">Automation Services</span>
           </motion.h1>
           <motion.p 
             initial={{ y: 25, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-400 leading-relaxed font-semibold max-w-2xl mx-auto"
+            className="text-base md:text-lg text-gray-300 leading-relaxed font-semibold max-w-3xl mx-auto"
           >
-            Comprehensive technology solutions to accelerate your business growth and digital transformation. We bridge engineering excellence with strategic planning.
+            Practical technology solutions for growing small and mid‑size teams that need reliable software, modern cloud infrastructure, and targeted automation.
+          </motion.p>
+          <motion.p 
+            initial={{ y: 25, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-xs md:text-sm text-gray-400 leading-relaxed font-semibold max-w-2xl mx-auto pt-1"
+          >
+            We combine engineering expertise and honest consulting to ship systems that are maintainable, observable, and aligned with your business priorities.
           </motion.p>
         </div>
       </section>
@@ -230,7 +248,7 @@ const ServicesPage = () => {
                   
                   <div className="pt-5 border-t border-gray-50 flex items-center text-primary font-black uppercase tracking-wider text-xs hover:gap-3 transition-all mt-auto">
                     <Link to="/contact" className="flex items-center gap-1.5">
-                      Discuss Requirements <ArrowRight size={14} />
+                      {service.cta} <ArrowRight size={14} />
                     </Link>
                   </div>
                 </motion.div>
@@ -241,33 +259,35 @@ const ServicesPage = () => {
       </section>
 
       {/* Strategic IT Consulting Highlight Component */}
-      <section className="py-24 bg-primary-dark text-white relative overflow-hidden border-t border-white/5">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/10 to-transparent rounded-l-full blur-3xl -z-0"></div>
+      <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100/50">
+        {/* Decorative subtle grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000001_1px,transparent_1px),linear-gradient(to_bottom,#00000001_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-0 w-1/3 h-full bg-gradient-to-r from-primary/5 to-transparent rounded-r-full blur-3xl -z-0"></div>
+        
         <div className="container mx-auto px-6 relative z-10">
-          <div className="bg-white/5 border border-white/10 rounded-[3rem] p-8 md:p-16 backdrop-blur-md">
+          <div className="bg-gray-50/70 border border-gray-100 rounded-[3rem] p-8 md:p-16 backdrop-blur-md">
             <div className="flex flex-col lg:flex-row gap-12 items-center">
               <div className="flex-1 space-y-6">
-                <span className="text-xs font-black uppercase tracking-widest text-primary block">Premium Consulting Division</span>
-                <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight">
+                <span className="text-xs font-black uppercase tracking-widest text-primary block">PREMIUM CONSULTING</span>
+                <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight text-primary-dark">
                   Strategic <span className="gradient-text italic">IT Consulting</span>
                 </h2>
-                <p className="text-lg text-gray-400 leading-relaxed font-semibold">
-                  Get expert guidance on IT planning, system architecture, and technology investments. Our consultants align IT strategies with business goals to achieve long-term scalability and measurable ROI.
+                <p className="text-base text-text-light leading-relaxed font-semibold">
+                  Get practical guidance on IT planning, architecture decisions, and technology investments. We help you prioritize initiatives that have clear business impact.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-6 pt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                   {[
-                    "Strategic IT Planning",
-                    "Technology Assessment",
-                    "Digital Roadmap",
-                    "ROI Optimization"
+                    "Strategic IT planning",
+                    "Architecture and technology assessment",
+                    "Digital roadmap design",
+                    "Investment and ROI guidance"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 shrink-0">
                         <CheckCircle2 size={12} className="text-primary" />
                       </div>
-                      <span className="font-bold text-sm text-white/90">{item}</span>
+                      <span className="font-bold text-sm text-primary-dark">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -284,7 +304,7 @@ const ServicesPage = () => {
                   Schedule a private tech optimization session with our senior strategy officers.
                 </p>
                 <Link to="/contact" className="w-full btn-primary py-4 px-6 text-sm uppercase tracking-widest font-black inline-flex justify-center items-center shadow-lg group-hover:-translate-y-1 transition-all">
-                  Schedule Consultation
+                  Schedule a consultation
                   <ArrowRight size={14} className="ml-2" />
                 </Link>
               </div>
