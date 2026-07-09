@@ -90,14 +90,14 @@ const ContactPage = () => {
                   },
                   { 
                     icon: <MapPin className="w-5 h-5" />, 
-                    title: "Head Office", 
+                    title: "HEAD OFFICE", 
                     detail: "Raleigh, North Carolina, USA", 
                     link: "https://maps.google.com/?q=Raleigh,+North+Carolina,+USA" 
                   },
                   { 
                     icon: <MapPin className="w-5 h-5" />, 
-                    title: "Branch Office (India)", 
-                    detail: "25, Subramanian Road, Ramanathapuram, Coimbatore, India - 641045", 
+                    title: "BRANCH OFFICE", 
+                    detail: "25, Subramanian Road, Ramanathapuram, Coimbatore, India – 641045", 
                     link: "https://maps.google.com/?q=25,+Subramanian+Road,+Ramanathapuram,+Coimbatore,+India+-+641045" 
                   }
                 ].map((item, i) => (

@@ -52,14 +52,13 @@ const Footer = () => {
             <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Contact Info</h4>
             <div className="space-y-4 text-gray-400 text-sm font-semibold">
               <p className="leading-relaxed">
-                <strong className="text-white block text-xs uppercase tracking-wider mb-1">Head Office</strong>
+                <strong className="text-white block text-xs uppercase tracking-wider mb-1">HEAD OFFICE</strong>
                 Raleigh, North Carolina, USA
               </p>
               <p className="leading-relaxed">
-                <strong className="text-white block text-xs uppercase tracking-wider mb-1">Branch Office</strong>
-                25, Subramanian Road,<br />
-                Ramanathapuram,<br />
-                Coimbatore, India - 641045
+                <strong className="text-white block text-xs uppercase tracking-wider mb-1">BRANCH OFFICE</strong>
+                25, Subramanian Road, Ramanathapuram,<br />
+                Coimbatore, India – 641045
               </p>
               <p className="flex flex-col gap-1">
                 <span>Phone: <a href="tel:+919366615960" className="hover:text-primary transition-colors">+91 9366615960</a></span>

@@ -79,7 +79,7 @@ const ServicesPage = () => {
       category: 'Data',
       icon: <Database size={32} />,
       title: "Big Data & Analytics",
-      desc: "Collect, organize, and visualize your data so teams can see what’s happening and act on it faster.",
+      desc: "Collect, organize, and visualize your data so teams can see what’s happening and act on it faster, to reduce reporting time and make trends visible to non‑technical stakeholders.",
       features: [
         "Set up pipelines and storage to centralize data from key systems.",
         "Build dashboards and reports that answer your important questions.",
@@ -119,7 +119,7 @@ const ServicesPage = () => {
       features: [
         "Incrementally modernize legacy applications with cloud and API integrations.",
         "Redesign key journeys to improve customer and internal user experience.",
-        "Simplify operations to reduce manual work and operational cost."
+        "Simplify operations to reduce manual work and ongoing operational cost."
       ],
       cta: "Discuss transformation roadmap"
     },
