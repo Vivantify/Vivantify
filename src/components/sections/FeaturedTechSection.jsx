@@ -97,7 +97,7 @@ const FeaturedTechSection = () => {
                 transition={{ duration: 0.4 }}
                 src={pillars[activeTab].image} 
                 alt={pillars[activeTab].title} 
-                className="rounded-[1.8rem] border border-white/5 shadow-2xl w-full h-[450px] object-cover"
+                className="rounded-[1.8rem] border border-white/5 shadow-2xl w-full h-[240px] sm:h-[340px] md:h-[450px] object-cover"
               />
             </div>
           </div>

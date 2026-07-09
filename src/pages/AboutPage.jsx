@@ -149,7 +149,7 @@ const AboutPage = () => {
                   transition={{ duration: 0.4 }}
                   src={pillars[activeTab].image} 
                   alt={pillars[activeTab].title} 
-                  className="w-full h-[400px] object-cover"
+                  className="w-full h-[240px] sm:h-[320px] md:h-[400px] object-cover"
                 />
               </div>
             </div>
