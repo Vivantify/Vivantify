@@ -124,9 +124,22 @@ const AboutPage = () => {
       <section className="py-16 bg-gray-50/50 border-b border-gray-100/50 relative">
         <div className="absolute top-1/2 left-[-10%] w-[30%] h-[30%] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="container mx-auto px-6">
-          {/* Mission & Core Pillar Split Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-7 relative w-full">
+          
+          {/* Top Block: Our Expertise & Who We Are (Full Width) */}
+          <div className="max-w-5xl mb-12 space-y-3">
+            <span className="text-xxs font-black uppercase tracking-widest text-primary block">OUR EXPERTISE</span>
+            <h2 className="text-3xl md:text-4xl font-black text-primary-dark tracking-tight leading-tight">
+              Who <span className="text-primary italic">We Are</span>
+            </h2>
+            <p className="text-base text-text-light leading-relaxed font-semibold max-w-4xl">
+              We are a US-headquartered technology partner based in Raleigh, North Carolina, with an offshore engineering delivery center in Coimbatore, India. We focus on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long-term architecture decisions with real-world delivery constraints.
+            </p>
+          </div>
+
+          {/* Bottom Block: Parallel layout for Picture and What We Do */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            {/* Left Column: Picture */}
+            <div className="lg:col-span-6 relative w-full lg:sticky lg:top-24">
               <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full animate-pulse-slow"></div>
               <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-[10px] border-white shadow-2xl bg-white">
                 <motion.img 
@@ -136,27 +149,18 @@ const AboutPage = () => {
                   transition={{ duration: 0.4 }}
                   src={pillars[activeTab].image} 
                   alt={pillars[activeTab].title} 
-                  className="w-full h-[460px] object-cover"
+                  className="w-full h-[400px] object-cover"
                 />
               </div>
             </div>
             
-            <div className="lg:col-span-5 space-y-5">
+            {/* Right Column: What We Do & Pillars list */}
+            <div className="lg:col-span-6 space-y-6">
               <div className="space-y-2">
-                <span className="text-xxs font-black uppercase tracking-widest text-primary block">OUR EXPERTISE</span>
-                <h2 className="text-2xl md:text-3xl font-black text-primary-dark tracking-tight leading-tight">
-                  Who <span className="text-primary italic">We Are</span>
-                </h2>
-                <p className="text-sm text-text-light leading-relaxed font-semibold">
-                  We are a US-headquartered technology partner based in Raleigh, North Carolina, with an offshore engineering delivery center in Coimbatore, India. We focus on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long-term architecture decisions with real-world delivery constraints.
-                </p>
-              </div>
-
-              <div className="space-y-2">
-                <h3 className="text-xl font-black text-primary-dark tracking-tight">
+                <h3 className="text-xl md:text-2xl font-black text-primary-dark tracking-tight">
                   What <span className="text-primary italic">We Do</span>
                 </h3>
-                <p className="text-xs text-text-light/90 leading-relaxed font-semibold">
+                <p className="text-sm text-text-light/90 leading-relaxed font-semibold">
                   We help growing small and mid‑size teams modernize legacy systems, move to the cloud, and automate critical workflows so they can operate more efficiently and respond faster to change.
                 </p>
               </div>
@@ -191,6 +195,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
