@@ -192,7 +192,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Category Tabs & Grid */}
-      <section className="py-24 bg-gray-50/50">
+      <section className="pt-20 pb-12 bg-gray-50/50">
         <div className="container mx-auto px-6">
           
           {/* Filter Bar */}
@@ -261,7 +261,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Strategic IT Consulting Highlight Component */}
-      <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100/50">
+      <section className="pt-12 pb-20 bg-white relative overflow-hidden border-t border-gray-100/50">
         {/* Decorative subtle grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000001_1px,transparent_1px),linear-gradient(to_bottom,#00000001_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
         <div className="absolute top-1/2 left-0 w-1/3 h-full bg-gradient-to-r from-primary/5 to-transparent rounded-r-full blur-3xl -z-0"></div>
