@@ -40,7 +40,7 @@ const Hero = () => {
               Vivantify builds custom software, cloud, and automation solutions for growing small and mid-size teams that need predictable, high‑quality execution.
             </p>
             <p className="text-text-light/80 text-base sm:text-lg leading-relaxed max-w-2xl font-semibold">
-              Our team in Coimbatore and Raleigh helps you modernize legacy systems, streamline operations, and launch new digital products faster—with clear roadmaps and measurable outcomes.
+              Our teams in Raleigh, USA and Coimbatore, India help you modernize legacy systems, streamline operations, and launch new digital products faster—with clear roadmaps and measurable outcomes.
             </p>
           </div>
           

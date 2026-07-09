@@ -8,9 +8,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary-dark pt-24 pb-12 text-white relative">
+    <footer className="bg-primary-dark pt-16 pb-8 text-white relative">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2">
               <img src="/logo.png" alt="Vivantify" className="h-8 w-auto object-contain" />
@@ -28,8 +28,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Quick Links</h4>
-            <ul className="space-y-3.5 text-gray-400 font-bold text-sm">
+            <h4 className="text-lg font-black mb-4 uppercase tracking-wider text-white">Quick Links</h4>
+            <ul className="space-y-2.5 text-gray-400 font-bold text-sm">
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-primary transition-colors">Services</Link></li>
@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Enterprise Services</h4>
-            <ul className="space-y-3.5 text-gray-400 font-bold text-sm">
+            <h4 className="text-lg font-black mb-4 uppercase tracking-wider text-white">Enterprise Services</h4>
+            <ul className="space-y-2.5 text-gray-400 font-bold text-sm">
               <li><Link to="/services" className="hover:text-primary transition-colors">Enterprise application development services</Link></li>
               <li><Link to="/services" className="hover:text-primary transition-colors">Managed cloud infrastructure & migration</Link></li>
               <li><Link to="/services" className="hover:text-primary transition-colors">AI & machine learning solutions</Link></li>
@@ -52,6 +52,11 @@ const Footer = () => {
             <h4 className="text-lg font-black mb-6 uppercase tracking-wider text-white">Contact Info</h4>
             <div className="space-y-4 text-gray-400 text-sm font-semibold">
               <p className="leading-relaxed">
+                <strong className="text-white block text-xs uppercase tracking-wider mb-1">Head Office</strong>
+                Raleigh, North Carolina, USA
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-white block text-xs uppercase tracking-wider mb-1">Branch Office</strong>
                 25, Subramanian Road,<br />
                 Ramanathapuram,<br />
                 Coimbatore - 641045

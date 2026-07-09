@@ -12,28 +12,28 @@ import CareersPage from './pages/CareersPage';
 
 const seoConfig = {
   '/': {
-    title: 'Vivantify Technology Solutions | Custom Software, Cloud & Automation in India',
-    description: 'Vivantify Technology Solutions is a Coimbatore-based enterprise technology partner for growing small and mid-size teams in India. We deliver reliable custom software, cloud, and automation solutions to modernize legacy systems, streamline operations, and launch new digital products faster.',
-    keywords: 'software development company Coimbatore, cloud computing services India, custom software developers Tamil Nadu, DevOps automation consultants, enterprise software partners India'
+    title: 'Vivantify Technology Solutions | Custom Software, Cloud & Automation',
+    description: 'Vivantify Technology Solutions is a US-headquartered enterprise technology partner based in Raleigh, North Carolina, with an offshore engineering branch in Coimbatore, India. We deliver reliable custom software, cloud, and automation solutions.',
+    keywords: 'software development company Raleigh NC, enterprise software partner USA, software development company Coimbatore, cloud computing services India, custom software developers Tamil Nadu'
   },
   '/about': {
-    title: 'About Vivantify | Premium Software Engineering Team in Coimbatore',
-    description: 'Learn about Vivantify Technology Solutions, Coimbatore\'s premium tech team. Discover our core values, delivery approach, and engineering expertise in building custom software, cloud, and automation.',
-    keywords: 'Vivantify Coimbatore, software engineering team Tamil Nadu, IT consultancy Coimbatore, custom software developers India, about Vivantify'
+    title: 'About Vivantify | US Technology Partner & India Delivery Branch',
+    description: 'Learn about Vivantify Technology Solutions, headquartered in Raleigh, North Carolina with a delivery branch in Coimbatore, India. Discover our core values, delivery approach, and engineering expertise.',
+    keywords: 'Vivantify Raleigh NC, Vivantify Coimbatore, software engineering team US, offshore developers India, custom software developers India, about Vivantify'
   },
   '/services': {
-    title: 'Software, Cloud & Automation Services | Vivantify Coimbatore',
-    description: 'Explore our technology services: application development, responsive web development, cloud computing on AWS/Azure, AI/Data models, DevOps pipelines, and digital transformation for Indian SMBs.',
-    keywords: 'cloud migration services India, web development Coimbatore, app developers Tamil Nadu, AI solutions business India, cybersecurity consulting Coimbatore, DevOps setup India'
+    title: 'Software, Cloud & Automation Services | Vivantify',
+    description: 'Explore our technology services: application development, responsive web development, cloud computing on AWS/Azure, AI/Data models, DevOps pipelines, and digital transformation for growing teams.',
+    keywords: 'cloud migration services US, web development Raleigh, app developers India, AI solutions business, cybersecurity consulting, DevOps setup'
   },
   '/contact': {
-    title: 'Start Your Project | Contact Vivantify Coimbatore',
-    description: 'Ready to streamline your business workflows? Get in touch with our Coimbatore tech squad for a free virtual technology review and blueprint consultation.',
-    keywords: 'contact Vivantify, software development consultation Coimbatore, hire cloud developers India, IT project query Tamil Nadu'
+    title: 'Start Your Project | Contact Vivantify (Raleigh & Coimbatore)',
+    description: 'Ready to streamline your business workflows? Get in touch with our tech squad in Raleigh, NC or Coimbatore, India for a free virtual technology review and blueprint consultation.',
+    keywords: 'contact Vivantify, software development consultation US, hire cloud developers India, IT project query'
   },
   '/careers': {
     title: 'Careers at Vivantify | Software Engineer Jobs in Coimbatore',
-    description: 'Join our growing engineering team in Coimbatore. Explore job openings for React developers, Node backend engineers, cloud architects, and QA specialists.',
+    description: 'Join our growing engineering delivery team in Coimbatore. Explore job openings for React developers, Node backend engineers, cloud architects, and QA specialists.',
     keywords: 'software engineer jobs Coimbatore, React developer openings Tamil Nadu, IT careers Coimbatore, tech jobs Coimbatore, backend developer hiring'
   }
 };

@@ -44,7 +44,7 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-lg text-text-light leading-relaxed font-semibold">
               <p>
-                Vivantify Technology Solutions India Pvt Ltd is a Coimbatore‑based technology company that helps growing small and mid-size teams build secure, scalable digital solutions across software, cloud, and automation.
+                Vivantify Technology Solutions is a US-headquartered technology partner with offices in Raleigh, North Carolina, and an offshore engineering branch in Coimbatore, India. We help growing small and mid-size teams build secure, scalable digital solutions across software, cloud, and automation.
               </p>
               <p className="text-base text-text-light/90 font-medium">
                 Founded by engineers with experience in enterprise IT and product development, we focus on practical architectures, reliable execution, and long‑term maintainability.

@@ -66,14 +66,14 @@ const AboutPage = () => {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           className="absolute left-[12%] bottom-[15%] hidden lg:block px-4 py-2 bg-white/40 border border-white/60 backdrop-blur-sm rounded-full shadow-sm text-xxs font-black text-gray-500 uppercase tracking-widest"
         >
-          COIMBATORE, IN
+          RALEIGH, USA
         </motion.div>
         <motion.div 
           animate={{ y: [0, 15, 0] }}
           transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
           className="absolute right-[15%] bottom-[20%] hidden lg:block p-4 bg-white/50 border border-white/70 backdrop-blur-md rounded-2xl shadow-sm text-xxs font-black text-primary uppercase tracking-widest"
         >
-          Scalable Delivery
+          COIMBATORE, IN
         </motion.div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -148,7 +148,7 @@ const AboutPage = () => {
                   Who <span className="text-primary italic">We Are</span>
                 </h2>
                 <p className="text-sm text-text-light leading-relaxed font-semibold">
-                  We are a Coimbatore‑based technology team focused on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long‑term architecture decisions with real‑world delivery constraints.
+                  We are a US-headquartered technology partner based in Raleigh, North Carolina, with an offshore engineering delivery center in Coimbatore, India. We focus on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long-term architecture decisions with real-world delivery constraints.
                 </p>
               </div>
 
