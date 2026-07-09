@@ -31,7 +31,7 @@ const ServicesPage = () => {
       category: 'Software',
       icon: <Code2 size={32} />,
       title: "Application Development & Maintenance",
-      desc: "Custom business applications designed for your specific workflows, with a focus on security, maintainability, and long‑term support.",
+      desc: "Custom business applications designed for your specific workflows, with a focus on security, maintainability, and long‑term support. Examples include internal tools, customer portals, and workflow systems such as loan processing or document automation platforms.",
       features: [
         "Custom applications built around your real business processes.",
         "Scalable architecture for stable performance as usage grows.",
@@ -42,8 +42,8 @@ const ServicesPage = () => {
     {
       category: 'Software',
       icon: <Globe size={32} />,
-      title: "Web Development",
-      desc: "Modern, responsive websites built with current web frameworks, designed to load fast and clearly explain what your business offers.",
+      title: "Responsive Web Development",
+      desc: "Modern, responsive websites built with current web frameworks, designed to load fast and clearly explain what your business offers. We design and build web apps and sites using modern frameworks like React/Next.js or widely supported CMS platforms, focusing on performance, accessibility, and maintainability.",
       features: [
         "User‑friendly, responsive websites using modern frameworks.",
         "Fast, SEO‑conscious builds to improve visibility and experience.",
@@ -55,7 +55,7 @@ const ServicesPage = () => {
       category: 'Cloud',
       icon: <Cloud size={32} />,
       title: "Cloud Computing Services",
-      desc: "Cloud migration and infrastructure services that help you run reliably on AWS, Azure, or Google Cloud without unnecessary complexity.",
+      desc: "Cloud migration and infrastructure services that help you run reliably on AWS, Azure, or Google Cloud without unnecessary complexity. We help teams move from on‑prem or shared hosting to managed cloud on AWS, Azure, or Google Cloud, setting up secure environments, monitoring, backup, and cost controls.",
       features: [
         "Plan and execute migrations to AWS, Azure, or Google Cloud.",
         "Design cost‑aware, scalable infrastructure with backup and recovery.",
@@ -67,7 +67,7 @@ const ServicesPage = () => {
       category: 'Data',
       icon: <Brain size={32} />,
       title: "AI & Machine Learning Solutions",
-      desc: "Use practical AI and machine learning to automate routine tasks, improve decisions, and personalize user experiences.",
+      desc: "Use practical AI and machine learning to automate routine tasks, improve decisions, and personalize user experiences. We favor explainable, maintainable models and integrate them into existing tools rather than building opaque experiments that are hard to support.",
       features: [
         "Automation and predictive models to support daily decision‑making.",
         "AI‑powered chatbots, recommenders, or classifiers tailored to your use cases.",
@@ -95,7 +95,7 @@ const ServicesPage = () => {
       features: [
         "Threat detection, firewall configuration, and data encryption.",
         "Regular security reviews and vulnerability checks to reduce risk.",
-        "Identity and access management including MFA and SSO where appropriate."
+        "Identity and access management with MFA and SSO where appropriate, integrated into your existing tools and cloud providers."
       ],
       cta: "Discuss security posture"
     },
@@ -103,7 +103,7 @@ const ServicesPage = () => {
       category: 'Cloud',
       icon: <InfinityIcon size={32} />,
       title: "DevOps & Automation Services",
-      desc: "Streamline how you build, test, and deploy software using DevOps practices and automation.",
+      desc: "Streamline how you build, test, and deploy software using DevOps practices and automation. We implement CI/CD with platforms like GitHub Actions, GitLab CI, or cloud‑native pipelines, and automate routine tasks so engineers can focus on meaningful work.",
       features: [
         "CI/CD pipelines for more frequent, predictable releases.",
         "Infrastructure as Code to keep environments consistent.",
@@ -127,11 +127,11 @@ const ServicesPage = () => {
       category: 'Data',
       icon: <Compass size={32} />,
       title: "IT Consulting & Strategy",
-      desc: "Get independent advice on architecture, tooling, and roadmaps so your technology investments match your business goals.",
+      desc: "Get independent, project‑linked advice on architecture reviews, technology choices, implementation roadmaps, and tooling selection so your software works for your business.",
       features: [
-        "Strategic IT planning aligned with your growth and risk profile.",
-        "Architecture and technology assessments to inform decisions.",
-        "Roadmap creation to guide the next phases of your digital initiatives."
+        "Ongoing architecture reviews and technology choices.",
+        "Practical implementation roadmaps to guide development.",
+        "Hands‑on selection of tools, platforms, and frameworks."
       ],
       cta: "Discuss consulting needs"
     }
@@ -178,7 +178,7 @@ const ServicesPage = () => {
             transition={{ delay: 0.2 }}
             className="text-base md:text-lg text-gray-300 leading-relaxed font-semibold max-w-3xl mx-auto"
           >
-            Practical technology solutions for growing small and mid‑size teams that need reliable software, modern cloud infrastructure, and targeted automation.
+            Practical technology solutions for small and mid‑size teams that need reliable software, modern cloud infrastructure, and targeted automation.
           </motion.p>
           <motion.p 
             initial={{ y: 25, opacity: 0 }}
@@ -186,7 +186,7 @@ const ServicesPage = () => {
             transition={{ delay: 0.3 }}
             className="text-xs md:text-sm text-gray-400 leading-relaxed font-semibold max-w-2xl mx-auto pt-1"
           >
-            We combine engineering expertise and honest consulting to ship systems that are maintainable, observable, and aligned with your business priorities.
+            We combine engineering expertise and honest consulting to ship systems that are maintainable, observable, and aligned with your business priorities, so your teams can ship changes consistently without turning every release into an incident.
           </motion.p>
         </div>
       </section>
@@ -196,19 +196,21 @@ const ServicesPage = () => {
         <div className="container mx-auto px-6">
           
           {/* Filter Bar */}
-          <div className="flex flex-wrap justify-center items-center gap-3 mb-16">
-            {categories.map((cat) => (
-              <button
-                key={cat.name}
-                onClick={() => setSelectedCategory(cat.name)}
-                className={`px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest border transition-all duration-300 ${
-                  selectedCategory === cat.name
-                    ? 'bg-primary text-white border-primary shadow-lg shadow-primary/20'
-                    : 'bg-white text-primary-dark border-gray-100 hover:border-orange-200/50'
-                }`}
-              >
-                {cat.label}
-              </button>
+          <div className="flex flex-wrap justify-center items-center gap-2 mb-16 bg-orange-50/30 p-2 rounded-2xl w-fit mx-auto border border-orange-100/50">
+            {categories.map((cat, idx) => (
+              <React.Fragment key={cat.name}>
+                {idx > 0 && <span className="text-orange-200/50 font-light mx-1 hidden sm:inline">|</span>}
+                <button
+                  onClick={() => setSelectedCategory(cat.name)}
+                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest transition-all duration-300 cursor-pointer ${
+                    selectedCategory === cat.name
+                      ? 'bg-primary text-white shadow-md'
+                      : 'text-primary-dark hover:text-primary'
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              </React.Fragment>
             ))}
           </div>
 
@@ -273,15 +275,15 @@ const ServicesPage = () => {
                   Strategic <span className="gradient-text italic">IT Consulting</span>
                 </h2>
                 <p className="text-base text-text-light leading-relaxed font-semibold">
-                  Get practical guidance on IT planning, architecture decisions, and technology investments. We help you prioritize initiatives that have clear business impact.
+                  Get leadership-level, high-impact consulting to align your technology investments with your business strategy and growth goals.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                   {[
-                    "Strategic IT planning",
-                    "Architecture and technology assessment",
-                    "Digital roadmap design",
-                    "Investment and ROI guidance"
+                    "Strategic IT planning for founders and executives",
+                    "Architecture and technology assessment for major initiatives",
+                    "Digital roadmap design aligned with growth goals",
+                    "Prioritized, ROI‑aware initiative roadmap"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 shrink-0">
@@ -299,9 +301,9 @@ const ServicesPage = () => {
                   <Compass size={28} />
                 </div>
                 <span className="text-xs font-black uppercase tracking-wider text-primary mb-1 block">Free Consultation Available</span>
-                <h4 className="text-2xl font-black mb-3">Accelerate Growth</h4>
+                <h4 className="text-2xl font-black mb-3">Make Confident Technology Decisions</h4>
                 <p className="text-gray-500 text-xs font-semibold leading-relaxed mb-6">
-                  Schedule a private tech optimization session with our senior strategy officers.
+                  Schedule a private technology assessment and optimization session with our senior architects.
                 </p>
                 <Link to="/contact" className="w-full btn-primary py-4 px-6 text-sm uppercase tracking-widest font-black inline-flex justify-center items-center shadow-lg group-hover:-translate-y-1 transition-all">
                   Schedule a consultation
