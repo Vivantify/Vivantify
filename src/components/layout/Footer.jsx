@@ -59,7 +59,7 @@ const Footer = () => {
                 <strong className="text-white block text-xs uppercase tracking-wider mb-1">Branch Office</strong>
                 25, Subramanian Road,<br />
                 Ramanathapuram,<br />
-                Coimbatore - 641045, India
+                Coimbatore, India - 641045
               </p>
               <p className="flex flex-col gap-1">
                 <span>Phone: <a href="tel:+919366615960" className="hover:text-primary transition-colors">+91 9366615960</a></span>
