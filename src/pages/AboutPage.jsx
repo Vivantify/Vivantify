@@ -126,13 +126,13 @@ const AboutPage = () => {
         <div className="container mx-auto px-6">
           
           {/* Top Block: Our Expertise & Who We Are (Full Width) */}
-          <div className="max-w-5xl mb-12 space-y-3">
+          <div className="w-full mb-12 space-y-3">
             <span className="text-xxs font-black uppercase tracking-widest text-primary block">OUR EXPERTISE</span>
             <h2 className="text-3xl md:text-4xl font-black text-primary-dark tracking-tight leading-tight">
               Who <span className="text-primary italic">We Are</span>
             </h2>
-            <p className="text-base text-text-light leading-relaxed font-semibold max-w-4xl">
-              We are a US-headquartered technology partner based in Raleigh, North Carolina, with an offshore engineering delivery center in Coimbatore, India. We focus on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long-term architecture decisions with real-world delivery constraints.
+            <p className="text-base text-text-light leading-relaxed font-semibold w-full">
+              We are a US-headquartered technology partner based in Raleigh, North Carolina, with an offshore engineering delivery center in Coimbatore, India. We focus on custom software, cloud, and automation for growing small and mid-size teams. Our background in enterprise IT and product development helps us balance long-term architecture decisions with real-world delivery constraints. We typically partner with B2B SaaS companies, internal IT and operations teams at mid‑market enterprises, and product leaders in sectors like finance, real estate, and professional services. Our engineers have led and delivered enterprise‑grade platforms, cloud migrations, and automation initiatives across North America and India, and we favor clear communication, well‑structured systems, and pragmatic use of modern tools and AI so technology remains an enabler—not a source of complexity—for your teams.
             </p>
           </div>
 
@@ -157,7 +157,7 @@ const AboutPage = () => {
             {/* Right Column: What We Do & Pillars list */}
             <div className="lg:col-span-6 space-y-6">
               <div className="space-y-2">
-                <h3 className="text-xl md:text-2xl font-black text-primary-dark tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-black text-primary-dark tracking-tight">
                   What <span className="text-primary italic">We Do</span>
                 </h3>
                 <p className="text-sm text-text-light/90 leading-relaxed font-semibold">
